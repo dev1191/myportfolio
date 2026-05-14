@@ -1,4 +1,4 @@
-# 🛠️ STITCHED PORTFOLIO // DEV RAJ
+# 🛠️ DEV RAJ Thapa
 
 A high-performance, developer-centric portfolio built with **Vue 3**, **Vite**, and **Tailwind CSS 4**. This project features a unique "Stitched" design aesthetic, high-speed animations, and a focus on technical precision.
 
@@ -25,7 +25,7 @@ npm run build
 
 ## 🎨 Design Philosophy: "STITCHED"
 
-The UI is inspired by high-end technical interfaces, utilizing a modular grid system where components are "stitched" together by fine-line borders. 
+The UI is inspired by high-end technical interfaces, utilizing a modular grid system where components are "stitched" together by fine-line borders.
 
 - **Grid System**: 1px gap patterns mimicking professional CAD/Blueprint software.
 - **Color Palette**: Electric Green (#75ff9e) primary on JetBlack (#131313) surfaces.
@@ -50,4 +50,5 @@ src/
 - **GitHub**: [dev1191](https://github.com/dev1191/)
 
 ---
-*Built with precision and performance in mind.*
+
+_Built with precision and performance in mind._
