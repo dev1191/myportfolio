@@ -3,7 +3,7 @@ const experiences = [
   {
     role: 'SENIOR BACKEND DEVELOPER',
     company: 'Source Monster',
-    period: '2022 — 2025',
+    period: '2024 — Present',
     status: 'LATEST',
     points: [
       'Designed secure web applications with Vue.js for admin panels and RESTful APIs for mobile apps.',
@@ -14,7 +14,7 @@ const experiences = [
   {
     role: 'SENIOR NODEJS DEVELOPER',
     company: 'Rigo Tech (India) Pvt Ltd',
-    period: '2020 — 2022',
+    period: '2021 — 2024',
     status: 'DEPLOYED',
     points: [
       'Architected backend systems leveraging microservices for scalability and high availability.',
@@ -55,7 +55,7 @@ const experiences = [
 </script>
 
 <template>
-  <section class="stitched-grid border-b border-outline-variant">
+  <section id="experience" class="stitched-grid border-b border-outline-variant">
     <div class="stitched-module p-margin-md flex justify-between items-center border-b border-outline-variant">
       <h2 class="text-headline-lg font-bold text-on-background">EXPERIENCE</h2>
       <span class="font-label-mono text-on-surface-variant">03 // TIMELINE</span>
@@ -68,7 +68,7 @@ const experiences = [
     >
       <div class="flex flex-col md:flex-row md:justify-between mb-base">
         <div>
-          <h4 class="text-2xl font-bold text-primary leading-none tracking-tight">{{ exp.role }}</h4>
+          <h3 class="text-2xl font-bold text-primary leading-none tracking-tight">{{ exp.role }}</h3>
           <p class="font-label-mono text-on-surface mt-2 text-[10px]">{{ exp.company }} // {{ exp.period }}</p>
         </div>
         <span class="font-label-mono text-on-surface-variant mt-2 md:mt-0 text-[10px]">[ {{ exp.status }} ]</span>

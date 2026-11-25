@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-background selection:bg-primary selection:text-on-primary">
+  <div class="min-h-screen stitched-canvas selection:bg-primary selection:text-on-primary">
     <TopNavBar />
     
     <main class="pt-16 max-w-container-max mx-auto border-x border-outline-variant">

@@ -4,11 +4,20 @@ import ProjectCard from './ProjectCard.vue'
 const projects = [
   {
     title: 'Ridein - Taxi Booking System',
-    tags: '[LARAVEL + ANDROID + IOS + FILAMENTPHP + MYSQL + REDIS + DOCKER]',
-    description: 'Transform your traditional fleet business into a digital powerhouse with our innovative taxi booking application. Includes a comprehensive admin dashboard and white-label solution.',
+    tags: '[LARAVEL + ANDROID + IOS + FILAMENT + MYSQL + REDIS + DOCKER]',
+    description: 'Ridein is a full-featured taxi booking and ride-hailing platform connecting riders, drivers, and fleet operators through mobile apps and a web-based management system. It includes real-time ride tracking, automated driver dispatch, fare calculation, scheduled rides, wallet and online payments, driver management, analytics, and configurable service areas. Built with Laravel, Filament, Kotlin, MySQL, and modern web technologies, Ridein offers a scalable solution for launching and managing a ride-hailing business.',
     image: '/images/01JPV6EPJ3C4304AQ71CXAP9S5.png',
     imageAlt: 'Taxi Booking Dashboard',
     link:'https://ridein.in/',
+    github:''
+  },
+  {
+    title: 'Ouraride - Taxi Booking System',
+    tags: '[LARAVEL + ANDROID + FILAMENT + MYSQL + DOCKER + REDIS + OSRM]',
+    description: "OuraRide is a comprehensive ride-hailing and parcel delivery platform designed to connect passengers, drivers, fleet owners, and delivery services. It features ride booking, real-time GPS tracking, dynamic fare calculation, driver management, parcel delivery, and an admin dashboard. Built with Laravel 13, Filament 5, Flutter, MySQL, OSRM, Typesense and Redis, the platform provides a scalable solution for businesses looking to launch and manage their own mobility services.",
+    image: '/images/ouraride_taxi_booking.png',
+    imageAlt: 'Ouraride Taxi Booking Dashboard',
+    link:'https://ouraride.wowsourcemonster.in/',
     github:''
   },
   {
@@ -29,15 +38,6 @@ const projects = [
     link:'https://affilspark.com/',
         github:''
   },
-    {
-    title: 'Wow Ride - Taxi Booking System',
-    tags: '[LARAVEL + ANDROID + VUE + MONGODB + DOCKER + REDIS]',
-    description: "Features different types of services like Daily, Rental, and Outstation, along with franchise modules. Built using a robust microservices architecture for high scalability.",
-    image: '/images/01JPV6EPJ3C4304AQ71CXAP9E3.png',
-    imageAlt: 'Wow Taxi Booking Dashboard',
-    link:'https://admin.wowride.in/',
-    github:''
-  },
   {
     title:'Travel Membership portal (CRM)',
     tags: '[CODEIGNITER + PHP + JQUERY + BOOTSTRAP + MYSQL]',
@@ -53,8 +53,8 @@ const projects = [
     description: 'Revolutionizes education management by seamlessly integrating administrative tasks, student information, and academic processes, enhancing efficiency and communication.',
     image: '/images/01JPVTMMPMS7XAWC08JEST0Q39.png',
     imageAlt: 'School ERP Interface',
-    link:'#',
-    github:''
+    link: '',
+    github: ''
   }
 ]
 </script>
@@ -64,7 +64,7 @@ const projects = [
     <div class="stitched-module p-margin-md col-span-full border-b border-outline-variant">
       <div class="flex justify-between items-center">
         <h2 class="text-headline-lg font-bold text-on-background">SELECTED PROJECTS</h2>
-        <span class="font-label-mono text-on-surface-variant">05 // DEPLOYED</span>
+        <span class="font-label-mono text-on-surface-variant">{{ String(projects.length).padStart(2, '0') }} // DEPLOYED</span>
       </div>
     </div>
     

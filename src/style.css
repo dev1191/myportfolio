@@ -50,10 +50,9 @@
     --outline-variant: #3b4a3d;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Geist:wght@400;700;800&display=swap');
-
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
@@ -61,9 +60,23 @@
     @apply bg-background text-on-background font-geist overflow-x-hidden selection:bg-primary selection:text-on-primary;
     margin: 0;
   }
+
+  :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
 }
 
 @layer components {
+  .stitched-canvas {
+    background-color: var(--background);
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, var(--outline-variant) 32%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--outline-variant) 32%, transparent) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: top center;
+  }
+
   .stitched-grid {
     @apply grid gap-[1px] bg-outline-variant;
   }
@@ -77,7 +90,7 @@
     @apply absolute inset-0 pointer-events-none border border-transparent transition-colors duration-200;
   }
 
-  .stitched-module:hover::after {
+  .stitched-module-interactive:hover::after {
     @apply border-primary;
   }
 
@@ -91,6 +104,10 @@
 
   .text-headline-lg {
     @apply text-4xl font-bold tracking-tight;
+  }
+
+  .text-body-md {
+    @apply text-base leading-relaxed;
   }
 }
 
@@ -106,4 +123,18 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
